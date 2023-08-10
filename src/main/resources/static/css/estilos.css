@@ -1,0 +1,47 @@
+.carousel-caption{
+   
+   background-color: greenyellow;
+}
+
+.carousel-inner{
+    background: black;
+    background-color: blue;
+}
+.item{
+   
+}.text-right {
+
+}
+body {
+    background-image: url('Images/Portada para Facebook Veterinaria Moderno Verde.jpg'); /* Reemplaza 'nombre-de-tu-imagen.jpg' con el nombre de tu imagen */
+    background-size: cover; /* Ajustar la imagen al tamaño de la ventana del navegador */
+
+}
+
+.btn-primary {
+
+}
+
+.d-flex {
+
+}
+
+.glyphicon {
+
+}
+
+.sr-only {
+
+}
+
+.form-group {
+
+}
+
+.text-center {
+
+}
+
+.btn-default {
+
+}

@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.tienda.domain;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
-import nonapi.io.github.classgraph.json.Id;
 
 @Data
 @Entity
@@ -23,6 +19,10 @@ public class Categoria implements Serializable {
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
+    
+    @OneToMany
+    @JoinColumn(name="id_categoria")
+    List<Producto>Productos;
 
     public Categoria() {
     }
@@ -31,4 +31,6 @@ public class Categoria implements Serializable {
         this.descripcion = categoria;
         this.activo = activo;
     }
+
+    
 }
